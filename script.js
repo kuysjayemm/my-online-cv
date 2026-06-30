@@ -26,3 +26,14 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     alert(`Thank you, ${name}! Your message has been "sent" successfully (simulated).`);
     this.reset();
 });
+const backToTopBtn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        // Show button when scrolled down 300px
+        backToTopBtn.style.setProperty("display", "flex", "important");
+    } else {
+        // Hide button when near the top
+        backToTopBtn.style.setProperty("display", "none", "important");
+    }
+});
