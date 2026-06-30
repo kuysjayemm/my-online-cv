@@ -30,10 +30,10 @@ const backToTopBtn = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 300) {
-        // Show button when scrolled down 300px
+        // Correct way to apply !important dynamically
         backToTopBtn.style.setProperty("display", "flex", "important");
     } else {
-        // Hide button when near the top
+        // Correct way to hide it with !important dynamically
         backToTopBtn.style.setProperty("display", "none", "important");
     }
 });
