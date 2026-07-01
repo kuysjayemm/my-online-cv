@@ -37,3 +37,19 @@ window.addEventListener("scroll", () => {
         backToTopBtn.style.setProperty("display", "none", "important");
     }
 });
+
+// Select all navigation links inside the collapsible menu
+  const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
+  const menuToggle = document.getElementById('navbarNav'); // Replace with your actual navbar target ID if different
+  
+  // Create a Bootstrap collapse instance
+  const bsCollapse = menuToggle ? new bootstrap.Collapse(menuToggle, { toggle: false }) : null;
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      // Check if the mobile menu is currently open/visible
+      if (menuToggle && menuToggle.classList.contains('show')) {
+        bsCollapse.hide();
+      }
+    });
+  });

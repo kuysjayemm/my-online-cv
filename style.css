@@ -12,6 +12,14 @@ html {
 html {
     scroll-behavior: smooth;
 }
+.company-name {
+    color: #6c757d !important;
+}
+
+body.dark .company-name, 
+body.dark-mode .company-name {
+    color: #adb5bd !important;
+}
 
 .profile-img {
     width: 150px;
