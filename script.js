@@ -26,6 +26,7 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     alert(`Thank you, ${name}! Your message has been "sent" successfully (simulated).`);
     this.reset();
 });
+// Back to Top
 const backToTopBtn = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
@@ -42,14 +43,14 @@ window.addEventListener("scroll", () => {
   const navLinks = document.querySelectorAll('.navbar-collapse .nav-link');
   const menuToggle = document.getElementById('navbarNav'); // Replace with your actual navbar target ID if different
   
-  // Create a Bootstrap collapse instance
-  const bsCollapse = menuToggle ? new bootstrap.Collapse(menuToggle, { toggle: false }) : null;
+// Create a Bootstrap collapse instance
+const bsCollapse = menuToggle ? new bootstrap.Collapse(menuToggle, { toggle: false }) : null;
 
-  navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      // Check if the mobile menu is currently open/visible
-      if (menuToggle && menuToggle.classList.contains('show')) {
-        bsCollapse.hide();
-      }
-    });
-  });
+navLinks.forEach((link) => {
+link.addEventListener('click', () => {
+    // Check if the mobile menu is currently open/visible
+    if (menuToggle && menuToggle.classList.contains('show')) {
+    bsCollapse.hide();
+    }
+});
+});

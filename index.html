@@ -15,6 +15,9 @@
     
 </head>
 <body>
+    <!-- Back to Top Button (Right Side) -->
+        <a href="#" id="backToTop" class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 50px; height: 50px; position: fixed; bottom: 20px; right: 20px; z-index: 1000; display: none !important;" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
@@ -43,12 +46,17 @@
     <header class="hero-section text-center text-white d-flex align-items-center">
         <div class="container">
             <!-- <img src="https://via.placeholder.com/150" alt="Profile Picture" class="rounded-circle profile-img mb-4 shadow"> -->
-             <img src="johnlogo.jpeg" alt="Profile Picture" class="rounded-circle profile-img mb-4 shadow">
+             <!-- <img src="JMRC_ProfPic.JPG" alt="Profile Picture" class="rounded-circle profile-img mb-4 shadow"> -->
+              <div class="profile-frame rounded-circle shadow mb-4">
+                <img src="JMRC_ProfPic.JPG" alt="Profile Picture" class="profile-img">
+            </div>
             <h1 class="display-4 fw-bold">John Michael Claudio</h1>
-            <p class="lead mb-4">Full Stack Web Developer, UI/UX Enthusiast & Audio Systems Engineer</p>
-            <a href="#contact" class="btn btn-primary btn-lg me-2"><i class="fas fa-envelope me-2"></i>Hire Me</a>
+            <p class="lead text-white-50">Technical Operations Specialist | Systems Troubleshooter | IT Specialist</p>
+            <!-- <p class="lead mb-4">Technical Operations Specialist | Systems Troubleshooter | IT Specialist</p> -->
+            <!-- <p class="lead mb-4">Full Stack Web Developer, UI/UX Enthusiast & Audio Systems Engineer</p> -->
+            <!-- <a href="#contact" class="btn btn-primary btn-lg me-2"><i class="fas fa-envelope me-2"></i>Hire Me</a> -->
             <!-- <a href="#" class="btn btn-outline-light btn-lg"><i class="fas fa-download me-2"></i>Download CV</a> -->
-            <a href="JohnMichaelClaudio_CV.pdf" download="JohnMichaelClaudio_CV.pdf" class="btn btn-outline-light btn-lg">
+            <a href="JMRC CV - AV IT.pdf" download="JMRC CV - AV IT.pdf" class="btn btn-outline-light btn-lg">
             <i class="fas fa-download me-2"></i>Download CV</a>
         </div>
     </header>
@@ -60,9 +68,10 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
                     <p class="lead">
-                        I am a Full Stack Web Developer and UI/UX Enthusiast passionate about building responsive web applications and clean, accessible interfaces. 
-                        Alongside software development, I am the Owner & Sound Engineer at CL AUDIO Pro Audio Rental, where I configure active PA systems, manage signal routing, and run live event sound engineering. 
-                        Whether I'm optimization-tuning code or tuning live acoustics, I love solving complex technical problems.
+                        Detail-oriented IT graduate with hands-on experience managing technical operations, system troubleshooting, and hardware configuration. 
+                        Proven track record in maintaining equipment reliability,
+                        diagnosing technical issues, and delivering exceptional client support. 
+                        Eager to leverage strong analytical skills and technical expertise to contribute to a dynamic technical operations team
                     </p>
 <!-- SOCIAL MEDIA  -->
                     <!-- <div class="mt-4">
@@ -213,8 +222,6 @@
         </div>
     </div>
 </section>
-<!-- Back to Top Button (Right Side) -->
-        <a href="#" id="backToTop" class="btn btn-primary rounded-circle d-flex align-items-center justify-content-center shadow" style="width: 50px; height: 50px; position: fixed; bottom: 20px; right: 20px; z-index: 1000; display: none !important;" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
 <!-- CONTACT ME or GET IN TOUCH-->
     <hr class="container text-muted">
     <section id="contact" class="py-5 bg-light-section">
@@ -222,7 +229,8 @@
             <h2 class="text-center fw-bold mb-4">Get In Touch</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form id="contactForm">
+                    <!-- FORM -->
+                    <!-- <form id="contactForm">
                         <div class="mb-3">
                             <label for="name" class="form-label">Name</label>
                             <input type="text" class="form-input form-control" id="name" required>
@@ -236,7 +244,35 @@
                             <textarea class="form-input form-control" id="message" rows="4" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary w-100">Send Message</button>
-                    </form>
+                    </form> -->
+
+
+                    <!-- <form action="https://api.web3forms.com/submit" method="POST">
+                       
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                       
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small">Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="Juan Dela Cruz" required>
+                        </div>
+                      
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small">Email Address</label>
+                            <input type="email" name="email" class="form-control" placeholder="name@email.com" required>
+                        </div>
+                     
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small">Message</label>
+                            <textarea name="message" class="form-control" rows="3" placeholder="Tell us about your event scale and venue location..." required></textarea>
+                        </div>
+                       
+                        <input type="hidden" name="subject" value="New CL.Audio Booking Inquiry">
+                        <button type="submit" class="btn btn-primary w-100 fw-bold">Send Message</button>
+                    </form> -->
+                    <div class="contact-info-row text-center font-awesome">
+                        <span><i class="fa-solid fa-phone"></i> +63 991 356 6389</span>
+                        <span class="ms-3"><i class="fa-solid fa-envelope"></i> claudiojmr30@gmail.com</span>
+                    </div>
                 </div>
             </div>
         </div>
